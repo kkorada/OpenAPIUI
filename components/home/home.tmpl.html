@@ -1,0 +1,13 @@
+<div ng-switch="inputType">
+    <div ng-switch-when="integer|number" ng-switch-when-separator="|">
+        <input name="{{parameter.name}}" ng-model="parameter.inputFieldValue"  type="number" />
+    </div>
+    <div ng-switch-when="string" ng-switch-when-separator="|">
+        <input name="{{parameter.name}}" ng-model="parameter.inputFieldValue" type="text"  />
+    </div>
+    <div ng-switch-default>
+        <input name="{{parameter.name}}" ng-model="parameter.inputFieldValue" type="text"  />
+    </div>
+
+    
+</div>
